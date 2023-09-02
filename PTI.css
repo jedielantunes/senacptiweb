@@ -1,0 +1,119 @@
+#CABECALHO {
+    background-color: lightblue;
+    height: 10em;
+    width: 100%;
+    color: white;
+    margin: 0.5em auto;
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+#MEIO {
+    background-color: darkgoldenrod;
+    width: 100%;
+    color: white;
+    height: 30em;
+    margin: 0.5em auto;
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    background-color: brown;
+    margin: 1em;
+    width: 16em;
+    height: 2em;
+    display: inline-block;
+    line-height: 1em;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: purple;
+    height: 100px;
+}
+
+article {
+    padding: 10px;
+    margin: 10px;
+    background: teal;
+    flex: 1 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+article:nth-of-type(3) {
+    flex: 3 200px;
+    display: flex;
+    flex-flow: column;
+}
+
+section {
+    display: flex;
+}
+
+.rodape {
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 16px;
+    font-family: helvetica;
+    text-align: center;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: white;
+}
+
+.rodape p {
+    margin-bottom: 5px;
+}
+
+.rodape-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 60px 10px 40px 10px;
+}
+
+.rodape-div-1,
+.rodape-div-2,
+.rodape-div-3,
+.rodape-div-4 {
+    display: flex;
+    width: calc(100% / 4 - 20px);
+    padding: 10px;
+
+}
+
+.rodape span {
+    font-size: 20px;
+    color: white;
+
+}
+
+/*mobile*/
+@media (max-width: 768px) {
+
+    .rodape-div-1,
+    .rodape-div-2,
+    .rodape-div-3 {
+        width: calc(50% - 20px);
+        padding: 10px;
+    }
+
+    .rodape-div {
+        padding: 60px 0px 40px 0px;
+    }
+}
